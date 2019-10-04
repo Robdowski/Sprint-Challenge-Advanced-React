@@ -16,6 +16,7 @@ function App() {
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
+        <h3>Toggle Dark</h3>
       </div>
      <Players />
     </div>

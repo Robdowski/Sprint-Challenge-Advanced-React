@@ -23,7 +23,7 @@ export default class Players extends React.Component {
     
     render() {
         return (
-            <div>
+            <div data-testid="player-container">
                 {this.state.players.map(item => 
                     <PlayerCard player={item} />
                 )}

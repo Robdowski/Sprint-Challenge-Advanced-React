@@ -3,5 +3,17 @@ import App from './App';
 import { render } from '@testing-library/react'
 
 test('renders without crashing', () => {
-  render(<App />;
+  render(<App />)
 });
+
+test('players are rendering', () => {
+  const { getByTestId } = render(<App />);
+
+  getByTestId(/player-container/i)
+})
+
+test('dark button rendering', () => {
+  const { getByText } = render(<App />)
+
+  getByText(/toggle dark/i)
+})
